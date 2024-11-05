@@ -1,0 +1,142 @@
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.sidebar {
+  width: 200px;
+}
+.video-card {
+  margin: 1rem;
+}
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+
+
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #202020;
+  color: #fff;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  background-color: #ff0000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 200px;
+  background-color: #fff;
+  padding: 1rem;
+  border-right: 1px solid #e0e0e0;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  background-color: #f1f1f1;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.sidebar button.selected {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+/* Video List styles */
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.video-card {
+  width: 220px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.video-card h3 {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Video Detail styles */
+.video-detail {
+  padding: 2rem;
+}
+
+.video-detail iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.video-detail h1 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.video-detail p {
+  color: #555;
+  line-height: 1.5;
+}
